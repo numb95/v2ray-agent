@@ -37,8 +37,8 @@ https://github.com/badafans/better-cloudflare-ip
 
 - www.cloudflare.com、www.digitalocean.com 这两个则是使用Cloudflare的服务的域名，他会根据本地运营商的不同，来分配不同的ip。
 
-域名|移动|联通|电信 
--|-|-|- 
+域名|移动|联通|电信
+-|-|-|-
 www.cloudflare.com|xx|xx|xx
 www.digitalocean.com|xx|xx|xx
 
@@ -51,7 +51,7 @@ www.digitalocean.com|xx|xx|xx
 - 3.tls servername 同样填写科学上网的域名
 - 4.如果多个自选ip，则复制刚刚添加好的配置，修改address部分即可。
 
-<img src='https://raw.githubusercontent.com/mack-a/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 v2rayU.png' width=400/>
+<img src='https://raw.githubusercontent.com/numb95/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 v2rayU.png' width=400/>
 
 ### 2.Quantumult
 
@@ -60,8 +60,8 @@ www.digitalocean.com|xx|xx|xx
 - 3.Host部分填写科学上网的域名
 - 4.请求头-->Host部分填写科学上网的域名
 
-<img src='https://raw.githubusercontent.com/mack-a/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 Quantumult01.png' width=400/>
-<img src='https://raw.githubusercontent.com/mack-a/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 Quantumult02.png' width=400/>
+<img src='https://raw.githubusercontent.com/numb95/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 Quantumult01.png' width=400/>
+<img src='https://raw.githubusercontent.com/numb95/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 Quantumult02.png' width=400/>
 
 ### 3.ShadowRocket
 
@@ -69,8 +69,8 @@ www.digitalocean.com|xx|xx|xx
 - 2.地址部分填写自选ip或者上方提供的域名
 - 3.注意混淆部分->Host部分填写科学上网的域名
 
-<img src='https://raw.githubusercontent.com/mack-a/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 ShadowRocket01.png' width=400/>
-<img src='https://raw.githubusercontent.com/mack-a/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 ShadowRocket02.png' width=400/>
+<img src='https://raw.githubusercontent.com/numb95/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 ShadowRocket01.png' width=400/>
+<img src='https://raw.githubusercontent.com/numb95/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 ShadowRocket02.png' width=400/>
 
 ### 4.v2rayN
 
@@ -78,7 +78,7 @@ www.digitalocean.com|xx|xx|xx
 - 2.地址部分填写自选ip或者上方提供的域名
 - 3.注意伪装域名部分填写科学上网的域名
 
-<img src='https://raw.githubusercontent.com/mack-a/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 v2rayN.png' width=400/>
+<img src='https://raw.githubusercontent.com/numb95/v2ray-agent/master/fodder/CloudFlare自选ip 手动更改 v2rayN.png' width=400/>
 
 ### 5.Openwrt - Passwall
 #### VLESS-WS
@@ -97,4 +97,3 @@ www.digitalocean.com|xx|xx|xx
 ## cloudflare gRPC断流
 - [grpc协议下UDP通过cloudflare会断](https://github.com/XTLS/Xray-core/issues/671)
 - [为什么套用 cloudflare grpc 会断流](https://github.com/v2fly/v2ray-core/discussions/1174)
-

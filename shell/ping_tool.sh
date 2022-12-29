@@ -148,7 +148,7 @@ start(){
     echo "${green}  2.移动${none}"
     echo "${green}  3.hk直连【适合移动以及服务器在hk的情况】${none}"
     echo "${purple}===============================${none}"
-    echo "${skyBlue}请选择【数字编号】:${none}"
+    echo "${skyBlue}Please choose【数字编号】:${none}"
     read -e funType
     manageFun $funType
 }

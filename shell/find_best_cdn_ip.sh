@@ -59,7 +59,7 @@ pingTool(){
     echoContent red "============================================="
     echoContent green "默认测试为五次，超时为1000ms"
     echoContent red "============================================="
-    read -p "请输入单个ip测试次数【默认为5次】：" testNum
+    read -p "Please enter单个ip测试次数【默认为5次】：" testNum
     if [[ "$testNum" =~ ^[0-9]+$ ]]
     then
         num=${testNum}
@@ -117,7 +117,7 @@ findIPList(){
     # cat /tmp/ips|awk -F "[|]" '{print $1}'|awk  -F "[-]" '{print $3}'|uniq|awk '{print NR":"$0}'|grep -v grep|grep 1|sort -t ':' -k 1n|head -1|awk -F "[:]" '{print $2}'
     echoContent red "============================================="
     cat /tmp/ips|grep -v grep|grep ${country}|awk -F "[|]" '{print $1}'|awk -F "[-]" '{print $1"-"$2}'|awk '{print "["NR"]"":"$0}'
-    read -p "请输入上述数字进行测试相应的ip段:" selectType
+    read -p "Please enter上述数字进行测试相应的ip段:" selectType
     if [[ -z ${selectType} ]]
     then
         echoContent red '输入有误请重新输入！'
@@ -157,11 +157,10 @@ downloadIPs(){
     if [[ -z `ls /tmp|grep -v grep|grep ips` ]]
     then
         echoContent yellow '开始下载ip库'
-        wget -q -P /tmp/ https://raw.githubusercontent.com/mack-a/v2ray-agent/dev/fodder/ips/ips
+        wget -q -P /tmp/ https://raw.githubusercontent.com/numb95/v2ray-agent/dev/fodder/ips/ips
         echoContent yellow '下载结束'
     fi
 }
 downloadIPs
 checkSystem
 findCountry
-

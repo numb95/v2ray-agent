@@ -108,7 +108,7 @@ bakConfig(){
 }
 # 安装证书
 installTLS(){
-    echoColor yellow "请输入域名【例:blog.v2ray-agent.com】："
+    echoColor yellow "Please enter域名【例:blog.v2ray-agent.com】："
     read domain
     if [[ -z ${domain} ]]
     then
@@ -187,7 +187,7 @@ init(){
     echoColor green "   11.兼容Centos、Ubuntu、Debian"
     echoColor green "   12.Github[https://github.com/mack-a]"
     echoColor red "=============================="
-    echoColor yellow "请输入[y]执行脚本，[任意]结束:"
+    echoColor yellow "Please enter[y]执行脚本，[任意]结束:"
     read isExecStatus
     if [[ ${isExecStatus} = "y" ]]
     then
