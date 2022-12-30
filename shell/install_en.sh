@@ -1407,7 +1407,7 @@ installV2RayService() {
 	if [[ -n $(find /bin /usr/bin -name "systemctl") ]]; then
 		rm -rf /etc/systemd/system/v2ray.service
 		touch /etc/systemd/system/v2ray.service
-		execStart='/etc/v2ray-agent/v2ray/v2ray -confdir /etc/v2ray-agent/v2ray/conf'
+		execStart='/etc/v2ray-agent/v2ray/v2ray run -confdir /etc/v2ray-agent/v2ray/conf'
 		cat <<EOF >/etc/systemd/system/v2ray.service
 [Unit]
 Description=V2Ray - A unified platform for anti-censorship
@@ -1515,7 +1515,7 @@ handleV2Ray() {
 			echoContent green " ---> V2Ray starts success"
 		else
 			echoContent red "V2Ray starts failed"
-			echoContent red "Please manually【/etc/v2ray-agent/v2ray/v2ray -confdir /etc/v2ray-agent/v2ray/conf】，View the error log"
+			echoContent red "Please manually【/etc/v2ray-agent/v2ray/v2ray run -confdir /etc/v2ray-agent/v2ray/conf】，View the error log"
 			exit 0
 		fi
 	elif [[ "$1" == "stop" ]]; then
